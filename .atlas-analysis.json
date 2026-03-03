@@ -1,0 +1,185 @@
+{
+  "projectType": "general",
+  "projectName": "SerenityOS",
+  "projectDescription": "A graphical Unix-like operating system for 64-bit x86, Arm, and RISC-V computers with a custom kernel and userland.",
+  "theme": "aspen",
+  "primaryColor": "#4a9eff",
+  "lightColor": "#6eb5ff",
+  "darkColor": "#2b7fd9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "faq"
+            ]
+          },
+          {
+            "group": "Building & Running",
+            "pages": [
+              "building/overview",
+              "building/advanced",
+              "building/macos",
+              "building/windows",
+              "building/troubleshooting",
+              "building/bare-metal",
+              "building/raspberry-pi"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/contributing",
+              "development/coding-style",
+              "development/patterns",
+              "development/testing",
+              "development/editor-setup"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/kernel",
+              "architecture/userland",
+              "architecture/ipc",
+              "architecture/event-loop"
+            ]
+          },
+          {
+            "group": "Kernel",
+            "pages": [
+              "kernel/overview",
+              "kernel/memory-management",
+              "kernel/filesystem",
+              "kernel/graphics-subsystem",
+              "kernel/development-guidelines"
+            ]
+          },
+          {
+            "group": "Browser & Web",
+            "pages": [
+              "browser/overview",
+              "browser/architecture",
+              "browser/libweb",
+              "browser/libjs",
+              "browser/ladybird"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Libraries",
+        "groups": [
+          {
+            "group": "Core Libraries",
+            "pages": [
+              "libraries/overview",
+              "libraries/ak",
+              "libraries/libcore",
+              "libraries/libipc"
+            ]
+          },
+          {
+            "group": "System Libraries",
+            "pages": [
+              "libraries/libc",
+              "libraries/libpthread",
+              "libraries/libm"
+            ]
+          },
+          {
+            "group": "GUI & Graphics",
+            "pages": [
+              "libraries/libgui",
+              "libraries/libgfx",
+              "libraries/libgl"
+            ]
+          },
+          {
+            "group": "Web & Network",
+            "pages": [
+              "libraries/libweb",
+              "libraries/libjs",
+              "libraries/libhttp",
+              "libraries/libtls"
+            ]
+          },
+          {
+            "group": "Media & Data",
+            "pages": [
+              "libraries/libaudio",
+              "libraries/libvideo",
+              "libraries/libarchive",
+              "libraries/libcrypto"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Components",
+        "groups": [
+          {
+            "group": "System Services",
+            "pages": [
+              "components/services/overview",
+              "components/services/window-server",
+              "components/services/audio-server",
+              "components/services/request-server"
+            ]
+          },
+          {
+            "group": "Applications",
+            "pages": [
+              "components/applications/overview",
+              "components/applications/browser",
+              "components/applications/terminal",
+              "components/applications/text-editor"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "components/utilities/overview",
+              "components/utilities/shell",
+              "components/utilities/core-utils"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Modern 64-bit kernel with pre-emptive multi-threading",
+    "Custom JavaScript and WebAssembly engine (LibJS)",
+    "Full web browser with LibWeb rendering engine",
+    "Complete GUI with WindowServer and desktop environment",
+    "POSIX compatibility with custom utilities and shell",
+    "Custom C++ standard library (AK) and LibC implementation",
+    "Security features including pledge, unveil, and W^X memory",
+    "Network stack with IPv4, TCP, UDP, and application protocols",
+    "Rich application suite including IDE, text editors, and games",
+    "Multi-architecture support (x86-64, Arm, RISC-V)"
+  ],
+  "publicApiSurface": [
+    "AK (custom C++ standard library)",
+    "LibCore (event loop, OS abstraction)",
+    "LibGUI (graphical user interface)",
+    "LibGfx (2D graphics and image decoding)",
+    "LibWeb (web rendering engine)",
+    "LibJS (JavaScript engine)",
+    "LibWasm (WebAssembly implementation)",
+    "LibHTTP (HTTP/1.1 client)",
+    "LibTLS (TLS implementation)",
+    "LibAudio (audio playback)",
+    "LibIPC (inter-process communication)",
+    "Kernel syscalls (pledge, unveil, open, read, write, etc.)",
+    "WindowServer protocol",
+    "AudioServer protocol"
+  ]
+}
